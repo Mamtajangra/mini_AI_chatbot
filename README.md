@@ -17,6 +17,9 @@ It allows easy integration of AI models with memory, tools, and external data so
 ### Advanced Chatbot Example
 ![Advanced Chatbot Screenshot](images/advance.jpg)
 
+### Streamlit (UI)
+![Model deploy ](images/app.jpg)
+
 ## Features
 
 - Uses Gemini-2.0-flash model via LangChain.
