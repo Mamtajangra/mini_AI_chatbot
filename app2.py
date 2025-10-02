@@ -1,17 +1,13 @@
 import streamlit as st
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from dotenv import load_dotenv
 import os
 
-# Load .env file
 load_dotenv()
-
 openai_key = os.getenv("OPENAI_API_KEY")
 openai_base = os.getenv("OPENAI_API_BASE")
-
-print(openai_key, openai_base)  
 
 model = ChatOpenAI(
     model_name="openrouter/auto",
