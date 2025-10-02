@@ -5,6 +5,7 @@ A simple terminal-based AI chatbot project using [LangChain](https://python.lang
 - **Advanced Chatbot:** Remembers previous conversation context.
 
 What is LangChain?
+
 LangChain is a Python framework that helps developers build applications powered by large language models (LLMs).
 It allows easy integration of AI models with memory, tools, and external data sources for creating context-aware and intelligent chatbots.
 
