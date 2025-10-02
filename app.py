@@ -1,5 +1,6 @@
 import streamlit as st
-from langchain.chat_models import init_chat_model
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from dotenv import load_dotenv
@@ -8,8 +9,10 @@ import os
 # Load env
 load_dotenv()
 
-# Initialize model & memory
-model = init_chat_model(model="gemini-2.0-flash", model_provider="google_genai")
+model = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    google_api_key=os.getenv("GOOGLE_API_KEY")
+)
 memory = ConversationBufferMemory(return_messages=True)
 conversation = ConversationChain(llm=model, memory=memory, verbose=False)
 
