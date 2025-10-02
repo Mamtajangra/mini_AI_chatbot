@@ -7,10 +7,10 @@ A simple terminal-based AI chatbot project using [LangChain](https://python.lang
  ## Screenshots
 
 ### Simple Chatbot Example
-![Simple Chatbot Screenshot](images\simple.jpg)
+![Simple Chatbot Screenshot](images/simple.jpg)
 
 ### Advanced Chatbot Example
-![Advanced Chatbot Screenshot](images\advance.jpg)
+![Advanced Chatbot Screenshot](images/advance.jpg)
 
 - Uses Gemini-2.0-flash model via LangChain.
 - Loads API keys from `.env` file.
