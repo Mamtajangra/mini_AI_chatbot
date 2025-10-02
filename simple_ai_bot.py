@@ -23,9 +23,9 @@ def simple_chatbot(user_input):
     response = model.invoke(user_input)    ## LangChain mein invoke() ek simple method hai jo model (ya chain, ya tool) ko call karta hai ek single input ke liye.
     return response.content                      ### response return krdiya
 
-if __name__ == "__main__":           ## Python mein har file ka ek special variable hota hai __name__. 
+if __name__ == "__main__":           ## [Python mein har file ka ek special variable hota hai __name__. 
                                      ##   # ye code sirf tab chalega jab file ko direct run karoge
-                                    ## agar hmm isko dusri file mein import karenge to ye bilkul nahi chalega
+                                    ## agar hmm isko dusri file mein import karenge to ye bilkul nahi chalega]
     print(" Chatbot started! Type 'exit' to quit.\n")
     while True:                    ## jab tak nahi rokenge ye infinitely loop mein chalta rahega
         user_msg = input("You: ")    ## you == means user koi bhi input dega isko
