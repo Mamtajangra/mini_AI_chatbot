@@ -1,8 +1,8 @@
 streamlit==1.26.0
-python-dotenv==1.0.0
 langchain==0.1.148
-langchain_google_genai==0.0.8
-filetype
-google-ai-generativelanguage
-langchain-core
-pydantic
+langchain-community==0.0.27
+langchain-google-genai==0.0.8
+google-generativeai==0.3.2
+langchain-core==0.1.30
+python-dotenv==1.0.0
+pydantic==2.6.0
