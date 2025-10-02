@@ -1,1 +1,55 @@
 # mini_AI_chatbot
+
+A simple terminal-based AI chatbot project using [LangChain](https://python.langchain.com/) and Gemini LLM (Google Generative AI). This project demonstrates two chatbot modes:
+- **Simple Chatbot:** Answers questions without memory.
+- **Advanced Chatbot:** Remembers previous conversation context.
+
+ ## Screenshots
+
+### Simple Chatbot Example
+![Simple Chatbot Screenshot](images\simple.jpg)
+
+### Advanced Chatbot Example
+![Advanced Chatbot Screenshot](images\advance.jpg)
+
+- Uses Gemini-2.0-flash model via LangChain.
+- Loads API keys from `.env` file.
+- Simple chatbot (`simple_ai_bot.py`): stateless, no memory.
+- Advanced chatbot (`advance_ai_bot.py`): remembers chat history using buffer memory.
+- Runs in your terminal.
+
+## Setup
+
+1. **Clone the repository**  
+   ```sh
+   git clone <repo-url>
+   cd mini_AI_chatbot# mini_AI_chatbot
+2. Install dependencies
+       pip install langchain google-generativeai python-dotenv  
+  
+3. Set up your .env file
+   Create a .env file in the project root:
+    GOOGLE_API_KEY=your_google_api_key_here  
+
+## Usage
+## Simple Chatbot (No Memory)
+    python [simple_ai_bot.py](http://_vscodecontentref_/0)   
+. Type your message and press Enter.
+. Type exit or quit to stop 
+
+## Advanced Chatbot (With Memory)
+python [advance_ai_bot.py](http://_vscodecontentref_/1)
+. Remembers previous messages for context-aware replies.
+. Type exit or quit to stop.
+
+## Files
+simple_ai_bot.py: Stateless chatbot.
+advance_ai_bot.py: Chatbot with memory.
+.env: Store your Google API key (not tracked by git).
+gitignore: Ignores .env file.
+
+## Notes
+. Requires a valid Google Generative AI API key.
+. For educational/demo purposes.
+
+
