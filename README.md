@@ -4,7 +4,7 @@ A simple terminal-based AI chatbot project using [LangChain](https://python.lang
 - **Simple Chatbot:** Answers questions without memory.
 - **Advanced Chatbot:** Remembers previous conversation context.
 
-What is LangChain?
+## What is LangChain?
 
 LangChain is a Python framework that helps developers build applications powered by large language models (LLMs).
 It allows easy integration of AI models with memory, tools, and external data sources for creating context-aware and intelligent chatbots.
@@ -45,7 +45,7 @@ It allows easy integration of AI models with memory, tools, and external data so
 ## Simple Chatbot (No Memory)
     python [simple_ai_bot.py](http://_vscodecontentref_/0)   
 . Type your message and press Enter.
-. Type exit or quit to stop 
+. Type 'exit' or 'quit' to stop 
 
 ## Advanced Chatbot (With Memory)
 python [advance_ai_bot.py](http://_vscodecontentref_/1)
@@ -57,6 +57,7 @@ simple_ai_bot.py: Stateless chatbot.
 advance_ai_bot.py: Chatbot with memory.
 .env: Store your Google API key (not tracked by git).
 gitignore: Ignores .env file.
+`images/`: Example screenshots.
 
 ## Notes
 . Requires a valid Google Generative AI API key.
