@@ -1,25 +1,27 @@
 import streamlit as st
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from dotenv import load_dotenv
 import os
 
+# Load env
 load_dotenv()
 openai_key = os.getenv("OPENAI_API_KEY")
-openai_base = os.getenv("OPENAI_API_BASE")
 
+# Initialize OpenAI model
 model = ChatOpenAI(
-    model_name="openrouter/auto",
-    temperature=0,
-    openai_api_key=openai_key,
-    openai_api_base=openai_base
+    model_name="gpt-3.5-turbo",
+   temperature=0,
+    openai_api_key=openai_key
 )
 
+# Multi-turn memory
 memory = ConversationBufferMemory(return_messages=True)
 conversation = ConversationChain(llm=model, memory=memory, verbose=False)
 
-st.title("AI Q&A Chatbot (OpenRouter)")
+# Streamlit UI
+st.title("AI Q&A Chatbot (OpenAI)")
 user_input = st.text_input("Ask me anything:")
 
 if st.button("Send") and user_input:
